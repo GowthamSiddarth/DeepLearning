@@ -33,13 +33,13 @@ if __name__ == "__main__":
     logging.basicConfig(stream=sys.stdout, level=logging.DEBUG, format="%(asctime)s: %(levelname)s - %(message)s")
     logging.info("Started running the tester functions ...")
 
-    sigmoid_input = np.array([2, 3, 5, 6])
+    sigmoid_input = np.arange(0, 21)
     sigmoid_res = test_sigmoid(sigmoid_input)
     logging.info(sigmoid_res)
 
     plot_sigmoid_scores(sigmoid_input, sigmoid_res)
 
-    softmax_input = np.array([2, 3, 5, 6])
+    softmax_input = np.arange(0, 21)
     softmax_res = test_softmax(softmax_input)
     logging.info(softmax_res)
 
